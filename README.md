@@ -59,4 +59,5 @@ A Node JS module to use with Pushover notifications app
                             console.log(data);
                     }
                 });
+            }
         });
