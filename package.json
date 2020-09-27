@@ -1,33 +1,32 @@
 {
   "name": "pushover-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "author": {
-  	"name": "Daniel Cañada García",
-  	"email": "danitetus@gmail.com"
+    "name": "Daniel Cañada García",
+    "email": "danitetus@gmail.com"
   },
   "keywords": [
-  	"pushover",
-  	"notifications",
-  	"mobile",
-  	"push",
-  	"notification"
+    "pushover",
+    "notifications",
+    "mobile",
+    "push",
+    "notification"
   ],
   "homepage": "https://github.com/danitetus/pushover",
   "repository": {
-  	"type": "git",
-  	"url": "git://github.com/danitetus/pushover"
+    "type": "git",
+    "url": "git://github.com/danitetus/pushover"
   },
   "scripts": {
     "start": "node index.js"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "engines": {
-  	"node": ">= 0.6.0"
+    "node": ">= 0.6.0"
   },
   "main": "./lib/pushover.js",
   "gypfile": false,
-  "readmeFilename" : "README.md",
+  "readmeFilename": "README.md",
   "bugs": "https://github.com/danitetus/pushover/issues"
 }
