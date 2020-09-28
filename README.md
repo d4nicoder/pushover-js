@@ -1,4 +1,5 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/danitetus/pushover-js/badge)](https://www.codefactor.io/repository/github/danitetus/pushover-js)
+
 #pushover-js
 ========
 
