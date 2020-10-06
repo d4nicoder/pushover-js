@@ -1,4 +1,3 @@
-import { stat } from 'fs'
 import { IncomingMessage } from 'http'
 import https from 'https'
 
@@ -43,8 +42,7 @@ const responseCallback = (res: IncomingMessage): Promise<IResponse> => {
 }
 
 
-module.exports = {
-
+export default {
   get: (url: string, options?: any): Promise<IResponse> => {
     return new Promise((resolve, reject) => {
       options = options || {}
