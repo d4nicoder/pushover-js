@@ -1,7 +1,7 @@
 import { IncomingMessage } from 'http'
-import https from 'https'
+const https = require('https')
 
-interface IResponse {
+export interface IResponse {
   headers: any
   data: string
   statusCode: number
@@ -34,7 +34,7 @@ const responseCallback = (res: IncomingMessage): Promise<IResponse> => {
         const returnData: IResponse = {
           headers: res.headers,
           data: responseData,
-          statusCode: res.statusCode
+          statusCode: typeof res.statusCode === 'number' ? res.statusCode : 500
         }
       }
     })
@@ -43,22 +43,22 @@ const responseCallback = (res: IncomingMessage): Promise<IResponse> => {
 
 
 export default {
-  get: (url: string, options?: any): Promise<IResponse> => {
+  get: (options?: any): Promise<IResponse> => {
     return new Promise((resolve, reject) => {
       options = options || {}
       options = { ...options, ...{ method: 'GET' } }
-      const req = https.request(url, options, (res: IncomingMessage) => {
+      const req = https.request(options, (res: IncomingMessage) => {
         responseCallback(res).then(resolve).catch(reject)
       })
       req.end()
     })
   },
-  post: (url: string, postData: any, options?: any): Promise<IResponse> => {
+  post: (options: any, postData: string): Promise<IResponse> => {
     return new Promise((resolve, reject) => {
       options = options || {}
       options = { ...options, ... { method: 'POST' } }
 
-      const req = https.request(url, options, (res) => {
+      const req = https.request(options, (res: IncomingMessage) => {
         responseCallback(res).then(resolve).catch(reject)
       })
 

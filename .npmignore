@@ -1,0 +1,7 @@
+.env
+node_modules
+src
+test.js
+.gitignore
+.git
+.tsconfig

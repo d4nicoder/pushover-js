@@ -1,5 +1,8 @@
 import Request from './request'
+import { IResponse } from './request'
 
+
+type Priority = -2 | -1 | 0 | 1 | 2
 
 interface INotificationData {
   user: string
@@ -12,7 +15,7 @@ interface INotificationData {
   message: string
   sound: Sound
   priority: number
-  expires: number
+  expire: number
   retry: number
 }
 
@@ -40,7 +43,10 @@ type Sound = 'pushover' |
   'vibrate' |
   'none'
 
-class Pushover {
+export class Pushover {
+  private _hostname: string = 'api.pushover.net'
+  private _path: string = '/1/messages.json'
+
   private _notification: INotificationData = {
     user: '',
     token: '',
@@ -48,7 +54,7 @@ class Pushover {
     message: '',
     sound: 'pushover',
     priority: 0,
-    expires: 0,
+    expire: 0,
     retry: 0
   }
 
@@ -77,18 +83,17 @@ class Pushover {
     return this
   }
 
-  public setPriority(priority: number): Pushover {
+  public setPriority(priority: Priority, expire?: number, retry?: number): Pushover {
+    if (priority < -2 || priority > 2) {
+      console.error('Pushover notification priority have to be from -2 to 2')
+      return this
+    }
     this._notification.priority = priority
-    return this
-  }
 
-  public setExpires(expires: number): Pushover {
-    this._notification.expires = expires
-    return this
-  }
-
-  public setRetry(retry: number): Pushover {
-    this._notification.retry = retry
+    if (priority === 2) {
+      this._notification.expire = typeof expire === 'number' ? expire : 10800
+      this._notification.retry = typeof retry === 'number' ? retry : 3600
+    }
     return this
   }
 
@@ -100,7 +105,7 @@ class Pushover {
     return this
   }
 
-  public async send(title?: string, message?: string) {
+  public async send(title?: string, message?: string): Promise<IResponse> {
     if (title) {
       this._notification.title = title
     }
@@ -109,6 +114,18 @@ class Pushover {
       this._notification.message = message
     }
 
-    const response = await Request.post('asdasdfsadf', this._notification)
+    const options = {
+      port: 443,
+      host: this._hostname,
+      path: this._path,
+      method: 'POST',
+      headers: {
+        'Content-length': JSON.stringify(this._notification).length,
+        'Content-type': 'application/json'
+      }
+    }
+
+    const response = await Request.post(options, JSON.stringify(this._notification))
+    return response
   }
 }
