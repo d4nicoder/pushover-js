@@ -26,7 +26,7 @@ npm install --save pushover-js
 
 ## Documentation
 
-Please read the complete documentation in the [docs](blob/master/docs/globals.md) folder
+Please read the complete documentation in the [docs](docs/globals.md) folder
 
 ## Usage
 
