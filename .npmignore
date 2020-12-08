@@ -2,6 +2,9 @@
 node_modules
 src
 test.js
+test.ts
+test.jpg
+docs
 .gitignore
 .git
 .tsconfig

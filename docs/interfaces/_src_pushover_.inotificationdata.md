@@ -33,7 +33,7 @@
 
 • `Optional` **device**: undefined \| string
 
-*Defined in [src/pushover.ts:10](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L10)*
+*Defined in [src/pushover.ts:10](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L10)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 •  **expire**: number
 
-*Defined in [src/pushover.ts:19](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L19)*
+*Defined in [src/pushover.ts:19](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L19)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • `Optional` **file**: undefined \| { filePath: string ; name: string  }
 
-*Defined in [src/pushover.ts:21](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L21)*
+*Defined in [src/pushover.ts:21](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L21)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • `Optional` **html**: undefined \| 1
 
-*Defined in [src/pushover.ts:14](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L14)*
+*Defined in [src/pushover.ts:14](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L14)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 •  **message**: string
 
-*Defined in [src/pushover.ts:16](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L16)*
+*Defined in [src/pushover.ts:16](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L16)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 •  **priority**: number
 
-*Defined in [src/pushover.ts:18](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L18)*
+*Defined in [src/pushover.ts:18](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L18)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 •  **retry**: number
 
-*Defined in [src/pushover.ts:20](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L20)*
+*Defined in [src/pushover.ts:20](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L20)*
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 •  **sound**: [Sound](../modules/_src_pushover_.md#sound)
 
-*Defined in [src/pushover.ts:17](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L17)*
+*Defined in [src/pushover.ts:17](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L17)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 • `Optional` **timestamp**: undefined \| number
 
-*Defined in [src/pushover.ts:13](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L13)*
+*Defined in [src/pushover.ts:13](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L13)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 •  **title**: string
 
-*Defined in [src/pushover.ts:15](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L15)*
+*Defined in [src/pushover.ts:15](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L15)*
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 •  **token**: string
 
-*Defined in [src/pushover.ts:9](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L9)*
+*Defined in [src/pushover.ts:9](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L9)*
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 • `Optional` **url**: undefined \| string
 
-*Defined in [src/pushover.ts:11](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L11)*
+*Defined in [src/pushover.ts:11](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L11)*
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 • `Optional` **url\_title**: undefined \| string
 
-*Defined in [src/pushover.ts:12](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L12)*
+*Defined in [src/pushover.ts:12](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L12)*
 
 ___
 
@@ -137,4 +137,4 @@ ___
 
 •  **user**: string
 
-*Defined in [src/pushover.ts:8](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L8)*
+*Defined in [src/pushover.ts:8](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L8)*

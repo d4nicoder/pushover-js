@@ -42,7 +42,7 @@
 
 \+ **new Pushover**(`user`: string, `token`: string): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:64](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L64)*
+*Defined in [src/pushover.ts:64](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L64)*
 
 #### Parameters:
 
@@ -59,7 +59,7 @@ Name | Type |
 
 • `Private` **\_hostname**: string = "api.pushover.net"
 
-*Defined in [src/pushover.ts:52](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L52)*
+*Defined in [src/pushover.ts:52](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L52)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • `Private` **\_path**: string = "/1/messages.json"
 
-*Defined in [src/pushover.ts:53](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L53)*
+*Defined in [src/pushover.ts:53](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L53)*
 
 ## Methods
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **send**(`title?`: undefined \| string, `message?`: undefined \| string): Promise\<[IResponse](../interfaces/_src_request_.iresponse.md)>
 
-*Defined in [src/pushover.ts:131](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L131)*
+*Defined in [src/pushover.ts:131](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L131)*
 
 #### Parameters:
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **setAttachment**(`name`: string, `filePath`: string): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:96](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L96)*
+*Defined in [src/pushover.ts:96](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L96)*
 
 #### Parameters:
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **setDevice**(`device`: string): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:71](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L71)*
+*Defined in [src/pushover.ts:71](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L71)*
 
 #### Parameters:
 
@@ -125,7 +125,7 @@ ___
 
 ▸ **setHtml**(): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:76](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L76)*
+*Defined in [src/pushover.ts:76](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L76)*
 
 **Returns:** [Pushover](_src_pushover_.pushover.md)
 
@@ -135,7 +135,7 @@ ___
 
 ▸ **setMessage**(`message`: string): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:86](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L86)*
+*Defined in [src/pushover.ts:86](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L86)*
 
 #### Parameters:
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **setPriority**(`priority`: [Priority](../modules/_src_pushover_.md#priority), `expire?`: undefined \| number, `retry?`: undefined \| number): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:104](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L104)*
+*Defined in [src/pushover.ts:104](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L104)*
 
 #### Parameters:
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **setSound**(`sound`: [Sound](../modules/_src_pushover_.md#sound)): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:91](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L91)*
+*Defined in [src/pushover.ts:91](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L91)*
 
 #### Parameters:
 
@@ -185,7 +185,7 @@ ___
 
 ▸ **setTimestamp**(`timestamp`: number): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:126](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L126)*
+*Defined in [src/pushover.ts:126](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L126)*
 
 #### Parameters:
 
@@ -201,7 +201,7 @@ ___
 
 ▸ **setTitle**(`title`: string): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:81](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L81)*
+*Defined in [src/pushover.ts:81](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L81)*
 
 #### Parameters:
 
@@ -217,7 +217,7 @@ ___
 
 ▸ **setUrl**(`url`: string, `title?`: undefined \| string): [Pushover](_src_pushover_.pushover.md)
 
-*Defined in [src/pushover.ts:118](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L118)*
+*Defined in [src/pushover.ts:118](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L118)*
 
 #### Parameters:
 
@@ -234,7 +234,7 @@ Name | Type |
 
 ▪ `Private` **\_notification**: object
 
-*Defined in [src/pushover.ts:55](https://github.com/danitetus/pushover-js/blob/9d4963a/src/pushover.ts#L55)*
+*Defined in [src/pushover.ts:55](https://github.com/danitetus/pushover-js/blob/8a9f266/src/pushover.ts#L55)*
 
 #### Properties:
 

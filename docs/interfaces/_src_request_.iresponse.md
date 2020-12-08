@@ -22,7 +22,7 @@
 
 •  **data**: string
 
-*Defined in [src/request.ts:8](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L8)*
+*Defined in [src/request.ts:8](https://github.com/danitetus/pushover-js/blob/8a9f266/src/request.ts#L8)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 •  **headers**: any
 
-*Defined in [src/request.ts:7](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L7)*
+*Defined in [src/request.ts:7](https://github.com/danitetus/pushover-js/blob/8a9f266/src/request.ts#L7)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 •  **statusCode**: number
 
-*Defined in [src/request.ts:9](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L9)*
+*Defined in [src/request.ts:9](https://github.com/danitetus/pushover-js/blob/8a9f266/src/request.ts#L9)*

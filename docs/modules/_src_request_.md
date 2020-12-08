@@ -30,7 +30,7 @@
 
 • `Const` **https**: any = require('https')
 
-*Defined in [src/request.ts:4](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L4)*
+*Defined in [src/request.ts:4](https://github.com/danitetus/pushover-js/blob/8a9f266/src/request.ts#L4)*
 
 ## Functions
 
@@ -38,7 +38,7 @@
 
 ▸ `Const`**processFile**(`name`: string, `filePath`: string, `boundary`: string): Promise\<Buffer>
 
-*Defined in [src/request.ts:28](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L28)*
+*Defined in [src/request.ts:28](https://github.com/danitetus/pushover-js/blob/8a9f266/src/request.ts#L28)*
 
 #### Parameters:
 
@@ -56,7 +56,7 @@ ___
 
 ▸ `Const`**processParam**(`name`: string, `value`: string): Promise\<string>
 
-*Defined in [src/request.ts:24](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L24)*
+*Defined in [src/request.ts:24](https://github.com/danitetus/pushover-js/blob/8a9f266/src/request.ts#L24)*
 
 #### Parameters:
 
@@ -73,7 +73,7 @@ ___
 
 ▸ `Const`**responseCallback**(`res`: IncomingMessage): Promise\<[IResponse](../interfaces/_src_request_.iresponse.md)>
 
-*Defined in [src/request.ts:49](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L49)*
+*Defined in [src/request.ts:49](https://github.com/danitetus/pushover-js/blob/8a9f266/src/request.ts#L49)*
 
 #### Parameters:
 
