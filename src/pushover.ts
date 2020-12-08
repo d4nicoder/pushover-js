@@ -5,18 +5,19 @@ import { IResponse } from './request'
 type Priority = -2 | -1 | 0 | 1 | 2
 
 interface INotificationData {
-  user: string
-  token: string
-  device?: string
-  url?: string
-  url_title?: string
-  timestamp?: number
-  title: string
-  message: string
-  sound: Sound
-  priority: number
-  expire: number
-  retry: number
+  user: string;
+  token: string;
+  device?: string;
+  url?: string;
+  url_title?: string;
+  timestamp?: number;
+  html?: 1;
+  title: string;
+  message: string;
+  sound: Sound;
+  priority: number;
+  expire: number;
+  retry: number;
 }
 
 type Sound = 'pushover' |
@@ -46,7 +47,6 @@ type Sound = 'pushover' |
 export class Pushover {
   private _hostname: string = 'api.pushover.net'
   private _path: string = '/1/messages.json'
-  private _users: string[] = []
 
   private _notification: INotificationData = {
     user: '',
@@ -66,6 +66,11 @@ export class Pushover {
 
   public setDevice(device: string): Pushover {
     this._notification.device = device
+    return this
+  }
+
+  public setHtml(): Pushover {
+    this._notification.html = 1
     return this
   }
 
@@ -107,9 +112,6 @@ export class Pushover {
   }
 
   public setTimestamp(timestamp: number): Pushover {
-    if (typeof timestamp !== 'number') {
-      return this
-    }
     this._notification.timestamp = timestamp
     return this
   }
@@ -134,7 +136,6 @@ export class Pushover {
       }
     }
 
-    const response = await Request.post(options, JSON.stringify(this._notification))
-    return response
+    return Request.post(options, JSON.stringify(this._notification))
   }
 }

@@ -1,6 +1,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/danitetus/pushover-js/badge)](https://www.codefactor.io/repository/github/danitetus/pushover-js)
 
-# pushover-js v1.1.1
+# pushover-js v1.2.0
 
 A Node JS module written in Typescript to use with Pushover notifications app
 
@@ -10,7 +10,7 @@ A Node JS module written in Typescript to use with Pushover notifications app
 
 This entire library has been rewritten to be based on promises.
 
-The code has been restructured and the methods changed to make it more complete and versatile.
+The code has been restructured, and the methods changed to make it more complete and versatile.
 
 If you were using a version of the 0.x.x branch, please check the documentation to adapt your code.
 
@@ -53,6 +53,10 @@ pushover
     .setPriority(2, 60, 30)
     // Set an url to access on tap
     .setUrl('https://www.github.com/danitetus/pushover-js', 'Pushover-JS github')
+    // Set custom timestamp (must to be unix timestamp, not javascript time!!!)
+    .setTimestamp(Math.floor(new Date(2020, 2, 1).getTime() / 1000))
+    // Mark message as html
+    .setHtml()
     // Send
     .send('Submit an issue', 'Click on the link to submit an issue')
   .then((msj) => {
@@ -88,6 +92,10 @@ pushover
     .setPriority(2, 60, 30)
     // Set an url to access on tap
     .setUrl('https://www.github.com/danitetus/pushover-js', 'Pushover-JS github')
+    // Set custom timestamp (must to be unix timestamp, not javascript time!!!)
+    .setTimestamp(Math.floor(new Date(2020, 2, 1).getTime() / 1000))
+    // Mark message as html
+    .setHtml()
     // Send
     .send('Submit an issue', 'Click on the link to submit an issue')
   .then((msj) => {
