@@ -1,3 +1,7 @@
+**[pushover-js](README.md)**
+
+> [Globals](globals.md)
+
 [![CodeFactor](https://www.codefactor.io/repository/github/danitetus/pushover-js/badge)](https://www.codefactor.io/repository/github/danitetus/pushover-js)
 
 # pushover-js v1.2.0
@@ -26,7 +30,7 @@ npm install --save pushover-js
 
 ## Documentation
 
-Please read the complete documentation in the [docs](blob/master/docs/globals.md) folder
+Please read the complete documentation in the [docs](blob/master/docs/index.md) folder
 
 ## Usage
 
@@ -115,7 +119,6 @@ pushover
 ```typescript
 // Load the module
 import { Pushover } from 'pushover-js'
-
 
 // Use this inside an async function
 const sendNotification = async () => {
