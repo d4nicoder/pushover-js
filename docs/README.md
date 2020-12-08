@@ -1,3 +1,7 @@
+**[pushover-js](README.md)**
+
+> [Globals](globals.md)
+
 [![CodeFactor](https://www.codefactor.io/repository/github/danitetus/pushover-js/badge)](https://www.codefactor.io/repository/github/danitetus/pushover-js)
 
 # pushover-js v1.2.0
@@ -26,7 +30,7 @@ npm install --save pushover-js
 
 ## Documentation
 
-Please read the complete documentation in the [docs](blob/master/docs/globals.md) folder
+Please read the complete documentation in the [docs](blob/master/docs/index.md) folder
 
 ## Usage
 
@@ -59,8 +63,6 @@ pushover
     .setUrl('https://www.github.com/danitetus/pushover-js', 'Pushover-JS github')
     // Set custom timestamp (must to be unix timestamp, not javascript time!!!)
     .setTimestamp(Math.floor(new Date(2020, 2, 1).getTime() / 1000))
-    // Add a file
-    .setAttachment('image.jpg', 'path/to/your/file.jpg')
     // Mark message as html
     .setHtml()
     // Send
@@ -100,8 +102,6 @@ pushover
     .setUrl('https://www.github.com/danitetus/pushover-js', 'Pushover-JS github')
     // Set custom timestamp (must to be unix timestamp, not javascript time!!!)
     .setTimestamp(Math.floor(new Date(2020, 2, 1).getTime() / 1000))
-    // Add a file
-    .setAttachment('image.jpg', 'path/to/your/file.jpg')
     // Mark message as html
     .setHtml()
     // Send
@@ -120,7 +120,6 @@ pushover
 // Load the module
 import { Pushover } from 'pushover-js'
 
-
 // Use this inside an async function
 const sendNotification = async () => {
     // Instance
@@ -132,8 +131,6 @@ const sendNotification = async () => {
         .setSound('cashregister')
         // If the priority is 2, you have to provide an expire time and a retry time (see the official API for more info)
         .setPriority(2, 60, 30)
-        // Add a file
-        .setAttachment('image.jpg', 'path/to/your/file.jpg')
         // Set an url to access on tap
         .setUrl('https://www.github.com/danitetus/pushover-js', 'Pushover-JS github')
 
@@ -146,5 +143,9 @@ const sendNotification = async () => {
 }
 
 ```
+
+## Known limitations
+
+At the moment it is not possible to send attachments with this library, but if you need it, I will think about implement it.
 
 For any suggestion or issue, please go to the [issues section](http://www.github.com/danitetus/pushover-js) on the [Github repository](https://www.github.com/danitetus/pushover-js)
