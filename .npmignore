@@ -5,3 +5,4 @@ test.js
 .gitignore
 .git
 .tsconfig
+.idea
