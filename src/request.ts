@@ -36,6 +36,7 @@ const responseCallback = (res: IncomingMessage): Promise<IResponse> => {
           data: responseData,
           statusCode: typeof res.statusCode === 'number' ? res.statusCode : 500
         }
+        resolve(returnData)
       }
     })
   })

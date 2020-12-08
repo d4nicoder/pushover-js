@@ -4,6 +4,7 @@ declare type Sound = 'pushover' | 'bike' | 'bugle' | 'cashregister' | 'classical
 export declare class Pushover {
     private _hostname;
     private _path;
+    private _users;
     private _notification;
     constructor(user: string, token: string);
     setDevice(device: string): Pushover;

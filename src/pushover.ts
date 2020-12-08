@@ -46,6 +46,7 @@ type Sound = 'pushover' |
 export class Pushover {
   private _hostname: string = 'api.pushover.net'
   private _path: string = '/1/messages.json'
+  private _users: string[] = []
 
   private _notification: INotificationData = {
     user: '',

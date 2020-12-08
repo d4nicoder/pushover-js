@@ -1,7 +1,7 @@
 {
   "name": "pushover-js",
   "description": "Library to send notifications with Pushover",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": false,
   "author": {
     "name": "Daniel Cañada García",
