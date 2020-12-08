@@ -30,7 +30,7 @@
 
 \+ **new ResponseError**(`message`: string, `statusCode`: number): [ResponseError](_src_request_.responseerror.md)
 
-*Defined in [src/request.ts:13](https://github.com/danitetus/pushover-js/blob/819bdfb/src/request.ts#L13)*
+*Defined in [src/request.ts:15](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L15)*
 
 #### Parameters:
 
@@ -47,7 +47,7 @@ Name | Type |
 
 •  **message**: string
 
-*Defined in [src/request.ts:12](https://github.com/danitetus/pushover-js/blob/819bdfb/src/request.ts#L12)*
+*Defined in [src/request.ts:14](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L14)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 •  **name**: string
 
-*Defined in [src/request.ts:11](https://github.com/danitetus/pushover-js/blob/819bdfb/src/request.ts#L11)*
+*Defined in [src/request.ts:13](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L13)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 •  **statusCode**: number
 
-*Defined in [src/request.ts:13](https://github.com/danitetus/pushover-js/blob/819bdfb/src/request.ts#L13)*
+*Defined in [src/request.ts:15](https://github.com/danitetus/pushover-js/blob/9d4963a/src/request.ts#L15)*

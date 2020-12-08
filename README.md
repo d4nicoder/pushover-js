@@ -1,6 +1,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/danitetus/pushover-js/badge)](https://www.codefactor.io/repository/github/danitetus/pushover-js)
 
-# pushover-js v1.2.0
+# pushover-js v1.3.0
 
 A Node JS module written in Typescript to use with Pushover notifications app
 
