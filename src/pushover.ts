@@ -105,6 +105,14 @@ export class Pushover {
     return this
   }
 
+  public setTimestamp(timestamp: number): Pushover {
+    if (typeof timestamp !== 'number') {
+      return this
+    }
+    this._notification.timestamp = timestamp
+    return this
+  }
+
   public async send(title?: string, message?: string): Promise<IResponse> {
     if (title) {
       this._notification.title = title

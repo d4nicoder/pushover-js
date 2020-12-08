@@ -12,6 +12,7 @@ export declare class Pushover {
     setSound(sound: Sound): Pushover;
     setPriority(priority: Priority, expire?: number, retry?: number): Pushover;
     setUrl(url: string, title?: string): Pushover;
+    setTimestamp(timestamp: number): Pushover;
     send(title?: string, message?: string): Promise<IResponse>;
 }
 export {};
