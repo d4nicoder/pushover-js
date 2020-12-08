@@ -147,4 +147,5 @@ const sendNotification = async () => {
 
 ```
 
-For any suggestion or issue, please go to the [issues section](http://www.github.com/danitetus/pushover-js) on the [Github repository](https://www.github.com/danitetus/pushover-js)
+For any suggestion or issue, please go to the [issues section](https://github.com/danitetus/pushover-js/issues) on the [Github repository](https://github.com/danitetus/pushover-js)
+
