@@ -4,7 +4,7 @@ import { IResponse } from './request'
 
 type Priority = -2 | -1 | 0 | 1 | 2
 
-interface INotificationData {
+export interface INotificationData {
   user: string;
   token: string;
   device?: string;
@@ -18,6 +18,10 @@ interface INotificationData {
   priority: number;
   expire: number;
   retry: number;
+  file?: {
+    name: string;
+    filePath: string;
+  }
 }
 
 type Sound = 'pushover' |
@@ -89,6 +93,14 @@ export class Pushover {
     return this
   }
 
+  public setAttachment(name: string, filePath: string): Pushover {
+    this._notification.file = {
+      name,
+      filePath
+    }
+    return this
+  }
+
   public setPriority(priority: Priority, expire?: number, retry?: number): Pushover {
     if (priority < -2 || priority > 2) {
       console.error('Pushover notification priority have to be from -2 to 2')
@@ -129,13 +141,8 @@ export class Pushover {
       port: 443,
       host: this._hostname,
       path: this._path,
-      method: 'POST',
-      headers: {
-        'Content-length': JSON.stringify(this._notification).length,
-        'Content-type': 'application/json'
-      }
     }
 
-    return Request.post(options, JSON.stringify(this._notification))
+    return Request.post(options, this._notification)
   }
 }
