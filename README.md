@@ -1,4 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/danitetus/pushover-js/badge)](https://www.codefactor.io/repository/github/danitetus/pushover-js)
+[![CodeFactor](https://www.codefactor.io/repository/github/danitetus/pushover-js/badge)](https://www.codefactor.io/repository/github/danitetus/pushover-js) ![Build test](https://github.com/danitetus/pushover-js/workflows/Build%20test/badge.svg)
 
 # pushover-js v1.3.0
 
