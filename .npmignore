@@ -9,3 +9,4 @@ docs
 .git
 .tsconfig
 .idea
+.vscode
