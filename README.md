@@ -30,7 +30,7 @@ Please read the complete documentation in the [docs](docs/globals.md) folder
 
 ## Usage
 
-### Callbacks
+### Promises
 
 ```javascript
 /*
